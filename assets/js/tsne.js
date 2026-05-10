@@ -131,6 +131,7 @@ Data.prototype.parseManifest = function(json) {
   config.size.atlas = json.config.sizes.atlas;
   config.size.lodCell = json.config.sizes.lod;
   config.size.points = json.point_sizes;
+  config.size.points.initial = config.size.points.max;
   // update the point size DOM element
   world.elems.pointSize.min = 0;
   world.elems.pointSize.max = config.size.points.max;
